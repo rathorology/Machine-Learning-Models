@@ -1,18 +1,12 @@
 # Movie Recommendation System
 ### About Dataset
 ================================================================================
-
 These files contain 1,000,209 anonymous ratings of approximately 3,900 movies 
 made by 6,040 MovieLens users who joined MovieLens in 2000.
-
-
-
 ### RATINGS FILE DESCRIPTION
 ================================================================================
-
 All ratings are contained in the file "ratings.dat" and are in the
 following format:
-
 UserID::MovieID::Rating::Timestamp
 
 - UserIDs range between 1 and 6040 
@@ -20,13 +14,10 @@ UserID::MovieID::Rating::Timestamp
 - Ratings are made on a 5-star scale (whole-star ratings only)
 - Timestamp is represented in seconds since the epoch as returned by time(2)
 - Each user has at least 20 ratings
-
 ### USERS FILE DESCRIPTION
 ================================================================================
-
 User information is in the file "users.dat" and is in the following
 format:
-
 UserID::Gender::Age::Occupation::Zip-code
 
 All demographic information is provided voluntarily by the users and is
@@ -43,7 +34,6 @@ information are included in this data set.
 	* 45:  "45-49"
 	* 50:  "50-55"
 	* 56:  "56+"
-
 - Occupation is chosen from the following choices:
 
 	*  0:  "other" or not specified
@@ -67,10 +57,8 @@ information are included in this data set.
 	* 18:  "tradesman/craftsman"
 	* 19:  "unemployed"
 	* 20:  "writer"
-
 ### MOVIES FILE DESCRIPTION
 ================================================================================
-
 Movie information is in the file "movies.dat" and is in the following
 format:
 
@@ -98,5 +86,17 @@ year of release)
 	* Thriller
 	* War
 	* Western
-
-
+### Libraries Used
+* Pandas
+* Numpy
+* Sklearn
+* Scipy
+### Approach
+Cosine similarity matrix is determined for both User-User and Item-Item Colaborative Filtering.The more the similarity value the item is likely to be liked by other user in both the case of colaborative Filtering.
+### Accuracy
+RMSE value is used to check the accuracy value
+* User-based Collaborative Filtering  RMSE: 3.25763482583
+* Item-based Collaborative Filtering  RMSE: 3.53926207119
+### Algorithm Used
+* SVD(Singular Value Decomposition)
+* User-based CF MSE: 2.75998872098
