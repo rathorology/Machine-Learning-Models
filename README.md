@@ -1,2 +1,2 @@
 # Machine-Learning-Models
-*Implementation of machine learning algorithms on raw data for Exploratory Data Analysis(EDA), predictions, classification etc
+*Implementation of machine learning algorithms on raw data for Exploratory Data Analysis(EDA) and Prdictive Modeling.
